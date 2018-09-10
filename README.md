@@ -6,8 +6,8 @@
 
 // TODO: in progress – check back soon!
 
-• `NextLevelAR`, a simple project that demonstrates how to use NextLevel for AR media capture. Run `make setup && make pods` from within the project directory to install all dependencies.
-• More to come... feel free to contribute.
+* `NextLevelAR`, a simple project that demonstrates how to use NextLevel for AR media capture. Run `make setup && make pods` from within the project directory to install all dependencies.
+* More to come... feel free to contribute.
 
 ### Documentation
 
