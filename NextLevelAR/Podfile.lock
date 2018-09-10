@@ -1,0 +1,20 @@
+PODS:
+  - NextLevel (0.11.1)
+  - Player (0.11.0)
+
+DEPENDENCIES:
+  - NextLevel (= 0.11.1)
+  - Player (= 0.11.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NextLevel
+    - Player
+
+SPEC CHECKSUMS:
+  NextLevel: 7bffb7d74856aa6825c9b264c40a61e8bc193984
+  Player: e20ab50094730c45bc67f0df77843c840eb41ca0
+
+PODFILE CHECKSUM: 51612a8fa248d97f7caa72c6fd10f52943da6143
+
+COCOAPODS: 1.5.3

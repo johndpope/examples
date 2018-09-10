@@ -1,0 +1,22 @@
+//
+//  Base.xcconfig
+//
+//  Created by Patrick Piemonte on 11/25/16.
+//
+
+PRODUCT_NAME = $(TARGET_NAME)
+WRAPPER_EXTENSION = app
+
+ARCHS[sdk=iphoneos*] = $(ARCHS_STANDARD_INCLUDING_64_BIT)
+IPHONEOS_DEPLOYMENT_TARGET = 11.0
+
+SKIP_INSTALL = NO
+DEAD_CODE_STRIPPING = YES;
+
+OTHER_CFLAGS = -fconstant-cfstrings
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+GCC_C_LANGUAGE_STANDARD = c99
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++

@@ -1,0 +1,31 @@
+source 'git@github.com:cocoapods/Specs.git'
+
+platform :ios, '11.0'
+
+# setup
+workspace './NextLevelAR.xcworkspace'
+swift_version = '4.0'
+use_frameworks!
+
+target 'NextLevelAR' do
+  pod 'NextLevel', '0.11.1'
+  pod 'Player', '0.11.0'
+#  pod 'Poly', '0.0.4'
+end
+
+post_install do |installer|
+
+   # individual target setup
+
+   installer.pods_project.targets.each do |target|
+
+    # setup NextLevel for ARKit
+
+    if target.name == 'NextLevel'
+      target.build_configurations.each do |config|
+        config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited) -D USE_ARKIT'
+      end
+    end
+
+  end
+end
